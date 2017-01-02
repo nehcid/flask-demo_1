@@ -1,0 +1,33 @@
+  <!doctype html>
+    <title>Closing price data for last month</title>
+    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
+    
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    
+    <div class=page>
+      <h1>Stock price tracker</h1>
+      <div class=metanav>
+        
+        <h4>                                                                                    
+          Please enter a valid stock name                                         
+        </h4>
+        
+        <form id='userinfoform' method='post' action='output' >
+          <p>
+	  Name: <input type='text' name='stock' />
+          </p>
+	  <p>
+    	Opening price <input type='checkbox' name='feature' value='open' />
+      	</p>
+      	Highest price <input type='checkbox' name='feature' value='high' />
+      	</p>
+      	Closing price <input type='checkbox' name='feature' value='close' />
+      	</p>  
+          <p>
+    	<input type='submit' value='Submit' />
+          </p>
+        </form>
+        
+      </div>
+    </div>
+    </html>
